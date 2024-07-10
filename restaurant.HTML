@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <html lang="en"> 
+    <head>
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="restaurant-style.css">
+
+     
+
+       </head>
+      
+        <title>Sample Restaurant Page</title>
+       
+      <body>
+        <div class="navbar">
+           
+              <nav> 
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#Top"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> 
+                    <li><a href="#Menu">Menu</a></li> 
+                    <li><a href="#Order">Order</a></li>
+                    <li><a href="#Catering">Catering</a></li>
+                    <li><a href="#About us">About Us</a></li> 
+                    <li><a href="#Gallery">Gallery</a></li>
+                 </ul>                 
+                <ul>
+                    <li><a href="#Top"><img src="r-images\My first design 1.png" class="food-pic" > </a></li> 
+                    <li class="hideOnMobile"><a href="#Menu">Menu</a></li> 
+                    <li class="hideOnMobile"><a href="#Order">Order</a></li>
+                    <li class="hideOnMobile"><a href="#Catering">Catering</a></li>
+                    <li class="hideOnMobile"><a href="#About us">About Us</a></li> 
+                    <li class="hideOnMobile"><a href="#Gallery">Gallery</a></li>
+                   <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                 </ul>      
+            </nav> 
+            
+        </div> 
+
+          
+
+        <div class="h-video">
+         <figure>
+            <video autoplay muted loop id="backgroundVideo">
+                <source src="r-images\food-video.mp4"type="video/mp4">
+            </video>    
+         </figure>
+        </div> 
+           <div class="newsletter">
+             <p>Join our newsletter for news and offers!</p>
+             <div class="form-container" id="Get started">
+                  
+                <form action="https://formspree.io/f/xovaqbw" method="POST">
+                  
+                  <input type="zip-code" id="zip-code" name="zip-code" placeholder="Zip Code" required>                 
+                  <input type="email" id="email" name="Email" placeholder="Email" required>           
+             
+                  <input type="submit" value="Submit" class="submit">
+                </form>
+              </div>
+           </div>   
+      
+           <div class="break" style="height: 20px; background-color: #a2a6ac"></div>
+
+      <main>
+           <div class="specials">
+             <img src="" class="special-pic">
+             <h2>Try our daily specials!</h2>
+             <ul class="sp-one">
+                <li>Family Meals</li>
+                <li>Drinks</li>
+                <li>$5 Take Aways</li>                
+             </ul>   
+             <ul class="sp-two">
+                <li>Lunch Specials</li>
+                <li>Featured Desserts</li>               
+             </ul>
+               <a href="#">LEARN MORE</a>
+           </div>
+
+           <div class="menu">
+            <h2 class="m-h">MENU HIGHLIGHTS</h2>
+
+            <a href="#"><img src="r-images\lobster.jpg"></a>
+            <a href="#"><img src="r-images\fries.jpg  "></a>
+            <a href="#"><img src="r-images\fish.jpg"></a>
+            <a href="#"><img src="r-images\filet.jpg"></a>  
+            <a href="#"><img src="r-images\burger.jpg"></a>
+            <a href="#"><img src="r-images\cake.jpg"></a>
+
+           </div> 
+      </main>
+
+         <footer>
+          <div class="foot-container"> 
+            <img src="" class="foot-pic">
+              
+              <div class="f-column">
+                <h2>About</h2>
+                <ul>
+                  <li>Contact Us</li>
+                  <li>Nutrition Facts</li>
+                  <li>Careers</li>  
+                </ul>
+              </div>
+              
+              <div class="f-column">
+                <h2>Gift Cards & Offers</h2>
+                <ul>
+                  <li>Buy Gift Cards</li>
+                  <li>Specials</li>
+                  <li>Check Card Balance</li>  
+                </ul>
+              </div>
+             
+              <div class="f-column">
+                <h2>Ordering</h2>
+                <ul>
+                  <li>Order</li>
+                  <li>My Account</li>
+                  <li>Locations</li>  
+                </ul>
+              </div>
+
+          </div>
+         
+         
+          <div class="info">
+            <h3>Restaurant Name</h3>
+            <p>established in 2024</p>
+           </div>
+
+         
+         </footer>
+
+
+          <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+          </script>
+        </body>
+        </html>
